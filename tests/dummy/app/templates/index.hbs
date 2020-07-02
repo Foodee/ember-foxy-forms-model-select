@@ -1,0 +1,13 @@
+<DocsHero />
+
+<div style="max-width: 40rem; margin: 0 auto; padding: 0 1.5rem">
+  <DocsDemo as |Demo|>
+    <Demo.Example @name="my-demo.hbs">
+      <p>Make sure to read up on the DocsDemo component before building out this page.</p>
+
+      <Form @for={{object}} @label="Select a model" as |f|>
+        <f.field @for="model-select" />
+      </Form>
+    </Demo.Example>
+  </DocsDemo>
+</div>
