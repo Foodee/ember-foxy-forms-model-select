@@ -23,8 +23,15 @@ ember install ember-foxy-forms-model-select
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+Once this addon is installed, it can be used like any other form control by 
+providing the @using variable.
 
+```hbs
+<Form @for={{model}} as |f|>
+  <f.field @for='attribute' @using='model-select' />
+  <f.field @for='record-array' @using='multiple-model-select' />
+</Form>
+```
 
 Contributing
 ------------------------------------------------------------------------------
